@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.edu.jlnu.servicestudy01.MainActivity">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:text="开启一个service"
+        android:onClick="startService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:onClick="stopService"
+        android:text="关闭一个service"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_start_intentservice"
+        android:text="开启一个intentService"
+        android:onClick="startIntentService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_stop_intentservice"
+        android:onClick="stopIntentService"
+        android:text="关闭一个intentService"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_bound_service"
+        android:text="绑定Service"
+        android:onClick="boundService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_unbound_service"
+        android:onClick="unBoundService"
+        android:text="解除绑定service"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_call"
+        android:onClick="call"
+        android:text="通过IPC调用业务方法"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_messenger"
+        android:onClick="messenger"
+        android:text="使用Messenger实现ipc"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
